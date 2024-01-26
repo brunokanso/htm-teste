@@ -1,0 +1,78 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+}
+
+/* Main */
+.main-content{    
+    background-color: rgb(15, 171, 199);
+    margin: 32px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+
+.main-content-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;  
+    justify-content: space-evenly; 
+
+}
+
+.main-text-primary{    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px 0 0 ;
+    margin: 0;
+}
+
+.main-content-text {
+    /* animation-name: text-slide;
+    animation-duration: 2.4s; */
+    display: block;   
+    padding: 12px;
+    border-radius: 20px;
+    width: calc(32% - 32px ); 
+    line-height: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;    
+}
+
+/* Main Animation */
+@keyframes text-slide {
+    from {
+      margin-left: 100%;
+      width: 100%;
+      background-color: white;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+/* End Animation */
+
+/* Main @media */
+@media screen and (max-width : 1600px){
+
+    .main-content-text {
+        width: calc(57% );
+        font-size: 73%;
+    }
+    .main-content{
+        margin: 0px;
+        width: calc(100% );     }    
+}
+
+/* Main @media end */
+
+/* End Main */
