@@ -11,7 +11,6 @@ body{
 /* Main */
 .main-content{    
     background-color: rgb(15, 171, 199);
-    margin: 32px;
     border-radius: 20px;
     box-shadow: 0 0 20px black;
 }
@@ -62,15 +61,26 @@ body{
 /* End Animation */
 
 /* Main @media */
-@media screen and (max-width : 1600px){
+@media screen and (max-width : 1280px){
 
     .main-content-text {
-        width: calc(57% );
-        font-size: 73%;
+        width: calc(57% ); 
+        font-size: 72%;
+        text-align: start;
+        text-indent: 10%;
+
     }
     .main-content{
-        margin: 0px;
-        width: calc(100% );     }    
+        margin: 0;
+        width: calc(100% );
+        border-radius: 0;  
+    }    
+}
+
+@media screen and (min-width: 1300px) {
+    
+
+    
 }
 
 /* Main @media end */
