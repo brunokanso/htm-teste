@@ -10,6 +10,8 @@ body{
 
 /* Main */
 .main{
+    animation-name: text-slide;
+    animation-duration: 1.4s;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,6 +35,7 @@ body{
 }
 
 .main-text-primary{    
+
     display: block;
     padding: 32px 0 0;
     margin: 0;
@@ -41,12 +44,11 @@ body{
 }
 
 .main-content-text {
-    /* animation-name: text-slide;
-    animation-duration: 2.4s; */
+
     display: block;   
     padding: 12px;
     border-radius: 20px;
-    width: calc(32% - 32px ); 
+    width: calc(83% - 32px );
     line-height: 1.4em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
@@ -58,14 +60,25 @@ body{
 /* Main Animation */
 @keyframes text-slide {
     from {
-      margin-left: 100%;
-      width: 100%;
-      background-color: white;
+        width: calc(100% - 32px );
+      color: white;     
+      flex-direction: column;
     }
   
-    to {
-      margin-left: 0%;
-      width: 100%;
+    50% {
+        color: white;   
+        width: calc(100% - 32px );
+        margin-left: 63%;
+        scroll-behavior:smooth;
+        flex-direction: column; 
+
+    }
+
+    100%{
+        width: calc(100% - 32px );
+        margin-left: 0%; 
+        flex-direction: column;
+
     }
   }
 /* End Animation */
