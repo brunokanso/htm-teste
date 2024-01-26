@@ -9,27 +9,35 @@ body{
 }
 
 /* Main */
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 32px );
+}
 .main-content{    
+    display: block;
     background-color: rgb(15, 171, 199);
     border-radius: 20px;
     box-shadow: 0 0 20px black;
+    margin: 32px;
+    width: calc(48% - 32px )
 }
 
 .main-content-box{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items:center;  
-    justify-content: space-evenly; 
+    flex-wrap: wrap;   
+    justify-content: space-evenly;
 
 }
 
 .main-text-primary{    
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 32px 0 0 ;
+    display: block;
+    padding: 32px 0 0;
     margin: 0;
+    text-align: center;
+    font-size: 50px;
 }
 
 .main-content-text {
@@ -44,6 +52,8 @@ body{
     background-color: white;
     color: black;    
 }
+
+
 
 /* Main Animation */
 @keyframes text-slide {
@@ -75,11 +85,18 @@ body{
         width: calc(100% );
         border-radius: 0;  
     }    
+    .main{
+        flex-direction: column;
+        width: calc(100%);
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
     
-
+    #last-panel{
+  
+    }
     
 }
 
