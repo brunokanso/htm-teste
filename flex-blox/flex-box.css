@@ -1,0 +1,29 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: black;
+
+}
+
+p{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.main-content{  
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+    background-color: blue;
+}

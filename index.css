@@ -55,12 +55,10 @@ body{
     color: black;    
 }
 
-
-
 /* Main Animation */
 @keyframes text-slide {
     from {
-        width: calc(100% - 32px );
+      width: calc(100% - 32px );
       color: white;     
       flex-direction: column;
     }
