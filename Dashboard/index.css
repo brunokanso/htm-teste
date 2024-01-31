@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;    
+}
+
+body{
+    display: flex;
+}
+
+i{  
+    font-size: 30px;
+}
+span{
+    font-size: 14px;
+}
+
+a { 
+    display: flex; 
+    align-items: center;
+    gap: 36px;
+    text-decoration: none; 
+    color: #fff; 
+ 
+} 
+
+.sidebar{    
+    overflow: hidden;
+    width: 100px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap;
+    transition: all 0.5s linear;
+    background-color: rgba(113, 99 , 186 , 255);
+}
+
+.menu,.logout{  
+    overflow: hidden;
+    height: 88%; 
+    width: 100%;  
+    padding: 10px;
+    display: flex;
+    flex-direction: column;   
+    flex-wrap: nowrap; 
+    gap: 1rem;
+}
+
+.logo{
+    height: 80px;
+    padding: 12px;
+}
+
+.logout{
+    justify-content: flex-end;
+}
+
+.menu li,.logout li{ 
+    width: 100%;
+    padding: 22px;
+    display: flex;      
+    align-items: center;
+    list-style: none;    
+    border-radius: 8px; 
+}
+
+.sidebar:hover{
+    width:240px;
+    transition:all 0.2s ease-in-out;
+}
+
+.sidebar li:hover,
+.active{
+    background-color: rgba(19, 13, 49, 0.2);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.grids{    
+    border-radius: 8px;
+    display: flex;
+    /* background: aqua; */
+}
+
+
+#grid1{
+
+    height: 10vh;
+}
+
+#grid2{
+    height: 20vh;
+}
+
+#grid3{
+    height: 70vh;
+}
