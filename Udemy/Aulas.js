@@ -113,18 +113,190 @@
 
 // var vs let
 
-var numero = 1 
-{
-    var numero = 2
-    console.log('Dentro do bloco',numero)
+// var numero = 1 
+// {
+//     var numero = 2
+//     console.log('Dentro do bloco',numero)
+// }
+// console.log('Fora do Bloco', numero)
+
+
+// var numero2 = 1 
+// {
+//     let numero2 = 2
+//     console.log('Dentro do bloco',numero2)
+// }
+// console.log('Fora do Bloco', numero2)   
+
+
+
+
+
+// For
+
+// for (var i = 0; i < 10; i++){
+//     console.log(i)
+// }
+
+// console.log('I é =',i)
+
+
+// for (let i = 0; i < 10; i++){
+//     console.log(i)
+// }
+
+// console.log('I é =',i)
+
+// const numb = []
+
+// for (var i = 0; i < 10; i++){
+//     numb.push(function(){
+//         console.log(i)
+//     })
+// }
+
+// numb[2]()
+// numb[8]()
+
+// const numb = []
+
+// for (let i = 0; i < 10; i++){
+//     numb.push(function(){
+//         console.log(i)
+//     })
+// }
+
+// numb[2]()
+// numb[8]()
+
+
+// hoisting (var mesmo que não declarado em cascata o interpretador vai ''jogar'' ele para cima)
+
+// console.log(a) // mesmo não declarado vai aparecer undefined em vez de dar um erro de declaração
+// var a = 2
+// console.log(a)
+
+
+// objeto vs  function
+
+// console.log(typeof Object)
+// console.log(typeof new Object) // no JS se declara objetos apartir de uma função.
+
+// class produto {}
+// console.log(typeof produto)
+// console.log(typeof new produto)
+
+
+
+
+
+// // Par nome/valor
+
+// const saudacao = 'opa' //contexto lexico
+
+// function exe(){
+//     const saudacao = 'fala'
+//     return saudacao
+// }
+
+// // Objetos sao grupos aninhados de pares nome/valor
+
+// const cliente = {
+//     nome: 'Pedro',
+//     sobrenome: 'Henrique',
+//     idade: 23,
+//     endereco: {
+//         lougradoro: 'Rua nova iguaçu',
+//         CEP: '70080-115'        
+//     }    
+// }
+
+
+// console.log(saudacao)
+
+// console.log(exe())
+
+// console.log(cliente)
+
+
+
+//  Notacao ponto "."
+
+// console.log(Math.ceil(6.1))
+
+// const obj1 = {}
+// obj1.nome = 'Bola'
+
+// console.log(obj1.nome)
+
+
+// function Obj (nome){
+//     this.nome = nome
+//     this.exec = function (){
+//         console.log('Exec...')
+//     }
+// }
+
+
+// const obj2  = new Obj('Cadeira')
+// const obj3  = new Obj('Mesa')
+
+// console.log(obj2.nome)
+// console.log(obj3.nome)
+// obj3.exec()
+
+
+
+
+
+// Atribuição
+
+// const a = 7
+// let b = 3
+
+// b += a   // b = b + a
+// console.log(b)
+
+// b -= 4   // b = b - 3  (valor de b se mantem devido a soma de b + a)
+// console.log(b)
+
+// b *= 2   // b = b * 2
+// console.log(b)
+
+// b /= 2   // b = b / 2 
+// console.log(b)
+
+// b %= 2   // b = b % 2
+// console.log(b)
+
+
+
+
+
+
+// desctructuring 
+
+
+
+const pessoa = {
+    nome: 'Ana',
+    idade: 23, 
+    endereco: {
+                lougradoro: 'Rua nova iguaçu',
+                CEP: '70080-115'        
+            } 
+
 }
-console.log('Fora do Bloco', numero)
 
+const {nome,idade} = pessoa
 
-var numero2 = 1 
-{
-    let numero2 = 2
-    console.log('Dentro do bloco',numero2)
-}
-console.log('Fora do Bloco', numero2)   
+console.log(nome,idade)
 
+const {nome: n, idade:i} = pessoa
+console.log (n,i)
+
+const {sobrenome, bemHumorada = true} = pessoa
+console.log(sobrenome,bemHumorada)
+
+const {endereco:{lougradoro,CEP,numero = 'N 23'}} = pessoa 
+console.log(lougradoro,CEP,numero)
