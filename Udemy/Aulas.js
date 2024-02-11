@@ -9,8 +9,39 @@
 // console.log(`1 + 1 =  ${1 + 1}`)
 
 
-const up = texto => texto.toUpperCase()
+// const up = texto => texto.toUpperCase()
 
-console.log(
-    `Ei... ${up('cuidado')}!`    
-)
+// console.log(
+//     `Ei... ${up('cuidado')}!`    
+// )
+
+
+//  Boolean
+
+// let statusLet = false 
+// console.log(statusLet)
+
+// statusLet = true 
+// console.log(statusLet)
+
+// console.log(!(statusLet = true))
+
+
+// Arrays
+
+const valores =  [2.3, 3.5, 4.6, 5.7, 6.2 ,9.2]
+console.log(valores)
+
+valores [6] = 20
+
+console.log(valores)
+console.log(valores.length)
+valores.push({id:3}, false , null, 'teste')
+console.log(valores)
+
+console.log(valores.pop())
+console.log(valores)
+
+delete valores[0]
+console.log(valores)
+
