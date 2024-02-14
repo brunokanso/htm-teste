@@ -278,25 +278,68 @@
 
 
 
-const pessoa = {
-    nome: 'Ana',
-    idade: 23, 
-    endereco: {
-                lougradoro: 'Rua nova iguaçu',
-                CEP: '70080-115'        
-            } 
+// const pessoa = {
+//     nome: 'Ana',
+//     idade: 23, 
+//     endereco: {
+//                 lougradoro: 'Rua nova iguaçu',
+//                 CEP: '70080-115'        
+//             } 
 
-}
+// }
 
-const {nome,idade} = pessoa
+// const {nome,idade} = pessoa
 
-console.log(nome,idade)
+// console.log(nome,idade)
 
-const {nome: n, idade:i} = pessoa
-console.log (n,i)
+// const {nome: n, idade:i} = pessoa
+// console.log (n,i)
 
-const {sobrenome, bemHumorada = true} = pessoa
-console.log(sobrenome,bemHumorada)
+// const {sobrenome, bemHumorada = true} = pessoa
+// console.log(sobrenome,bemHumorada)
 
-const {endereco:{lougradoro,CEP,numero = 'N 23'}} = pessoa 
-console.log(lougradoro,CEP,numero)
+// const {endereco:{lougradoro,CEP,numero = 'N 23'}} = pessoa 
+// console.log(lougradoro,CEP,numero)
+
+
+
+// OPERADORES ARITIMETICOS
+
+// const [a,b,c,d] = [3,5,1,15]
+
+// const soma = a + b + c + d
+// const subtracao = soma - 10;
+// const divisao = subtracao / 2
+// const modulo = divisao % 2
+
+
+// console.log(soma,subtracao,divisao,modulo)
+
+
+
+//OPERADORES RELACIONAIS
+
+
+// console.log('01)', '1' == 1)
+// console.log('02)', '1' === 1)
+// console.log('03)', '3' != 3)
+// console.log('04)', '3' !== 3)
+// console.log('05)', 3 > 2)
+// console.log('06)', 3 < 2)
+// console.log('07)', 3<=2)
+// console.log('08)', 3>=2)
+
+
+// const d1 = new Date(0)
+// const d2 = new Date(0)
+// console.log('09)', d1 === d2)
+// console.log('10)', d1 == d2)
+// console.log('11)', d1.getTime() === d2.getTime())
+
+
+// console.log('12)', undefined == null)
+// console.log('12)', undefined === null)
+
+
+
+// OPERADORES LOGICOS
